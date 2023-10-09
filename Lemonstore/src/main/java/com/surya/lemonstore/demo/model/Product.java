@@ -13,38 +13,45 @@ public class Product {
     private Long productId;
 
     private String name;
-
     private double price;
 
-    // Constructors (if needed)
+    // Constructors
 
-    // Getter for productId
+    public Product() {
+        // Default constructor
+    }
+
+    public Product(Long productId, String name, double price) {
+        this.productId = productId;
+        this.name = name;
+        this.price = price;
+    }
+
+    // Getters and setters
+
     public Long getProductId() {
         return productId;
     }
 
-    // Setter for productId
     public void setProductId(Long productId) {
         this.productId = productId;
     }
 
-    // Getter for name
     public String getName() {
         return name;
     }
 
-    // Setter for name
     public void setName(String name) {
         this.name = name;
     }
 
-    // Getter for price
     public double getPrice() {
         return price;
     }
 
-    // Setter for price
     public void setPrice(double price) {
         this.price = price;
     }
+
+    // Constructors
 }
