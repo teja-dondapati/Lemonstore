@@ -67,6 +67,8 @@ Description: Delete a recorded sale transaction from the Lemon Store by its uniq
 Path Variable: saleId - The ID of the sale to delete.    
 Response: No content (HTTP status code 204) if the deletion is successful.    
 
+need to add application properties dev-prod environments
+
 
 
 
