@@ -67,7 +67,30 @@ Description: Delete a recorded sale transaction from the Lemon Store by its uniq
 Path Variable: saleId - The ID of the sale to delete.    
 Response: No content (HTTP status code 204) if the deletion is successful.    
 
-need to add application properties dev-prod environments
+
+
+Application Properties of Dev and Prod   
+
+Development Profile ("dev")   
+Profile Activation: Uncomment the following line to activate the development profile:   
+
+spring.profiles.active=dev   
+Purpose: The development profile is intended for local development and testing. It enables features such as detailed logging and may use an in-memory database for rapid development.   
+
+Production Profile ("prod")   
+Profile Activation: Uncomment the following line to activate the production profile   
+
+
+spring.profiles.active=prod   
+Purpose: The production profile is used for the live production environment. It should be configured with optimized settings and connect to the production database and services.      
+
+
+
+
+
+
+
+
 
 
 
