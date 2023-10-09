@@ -12,10 +12,10 @@ import java.util.Optional;
 public class LemonStoreService {
 
     private final ProductRepository productRepository;
-    private final SaleRepository saleRepository;
+    private SaleRepository saleRepository;
 
     @Autowired
-    public LemonStoreService(ProductRepository productRepository, SaleRepository saleRepository) {
+    public LemonStoreService(ProductRepository productRepository) {
         this.productRepository = productRepository;
         this.saleRepository = saleRepository;
     }
